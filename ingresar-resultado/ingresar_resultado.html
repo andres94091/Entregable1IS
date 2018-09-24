@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../imgs/logo.png">
+        <title>LIS</title>
+    </head>
+    <body class="img_fondo" background="../imgs/lab.jpg"
+          >
+        <main>
+            <!-- navbar-->
+            <div class="topnav">
+                <a class="active" href="ingresar_resultado.html">Ingresar resultado</a>
+                <a href="../consulta-masiva/consulta_masiva.php">Consultar</a>
+                <a href="#contact">Calidad</a>
+                <a href="#about">Resultados</a>
+                <a href="../index.html">Menu inicial</a>
+            </div>
+            <!-- Formulario-->
+            <div class="content-all">
+                <br><br>
+                <form action="save_exam.php" method="post" class="form-hce">
+                    <h2>Ingreso de resultados perfil lipidico</h2>
+                    <br>
+                    <div class="contenedor_datos">
+                        <h3>Datos personales paciente</h3>
+                        <input type="text" placeholder="Nombres" name="name" class="input50">
+                        <input type="text" placeholder="Apellidos" name="last_name" class="input50">
+                        <input type="text" placeholder="Cedula" name="id" class="input50">
+                        <input type="number" placeholder="edad" name="age" class ="input33">
+                        <select name="gender" class="input33">
+                            <option value=0 >Genero...</option>
+                            <option value=1 >Masculino</option>
+                            <option value=2 >Femenino</option>
+                        </select>
+                        <select name="eps" class="input33">
+                            <option value=0 >EPS...</option>
+                            <option value=1 >Cafesalud</option>
+                            <option value=2 >Coomeva</option>
+                            <option value=3 >Sura</option>
+                            <option value=4 >Otro</option>
+                        </select>
+                    </div>
+                    <div class="contenedor_datos">
+                        <h3>Resultados examen</h3>
+                        <h6>Colesterol</h6>
+                        <input type="text" name="col" class="input25">
+                        <h6>HDL</h6>
+                        <input type="text" name="hdl" class="input25">
+                        <h6>LDL</h6>
+                        <input type="text"  name="ldl" class="input25">
+                        <h6>Trigiceridos</h6>
+                        <input type="text" name="trig" class="input25">
+                    
+                    </div>
+                    
+                    <div class="contenedor_btn">
+                        
+                        <input type="reset" name="borrar" value="Borrar">
+                        <input type="submit" name="guardar" value="Guardar">
+                    
+                    </div>
+                
+                </form>
+            </div>
+            <footer>
+            <a class="link "href="#">www.pllab.com.co</a> Teléfono: 8095412 correo: info@pllab.com.co
+            </footer>
+        </main>
+    </body>
+    
+</html>
