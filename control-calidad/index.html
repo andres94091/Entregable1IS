@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../imgs/logo.png">
+        <title>LIS</title>
+    </head>
+    <body class="img_fondo" background="../imgs/lab.jpg"
+          >
+        <main>
+            <!-- navbar-->
+            <div class="topnav">
+                <a class="active" href="ingresar_resultado.html">Ingresar resultado</a>
+                <a href="../consulta-masiva/consulta_masiva.php">Consultar</a>
+                <a href="ingreso_calidad.php">Calidad</a>
+                <a href="#about">Resultados</a>
+                <a href="../index.html">Menu inicial</a>
+            </div>
+            <!-- Formulario-->
+            <div class="content-all">
+                <br><br>
+                <form action="ingreso_calidad.php" method="post" class="form-hce">
+                    <h2>Control de Calidad</h2>
+                    <br>
+                    <div class="contenedor_datos">
+                        <h3>Ingreso de datos de calidad</h3>
+                        <input type="number" placeholder="Colesterol 1" name="col1" class="input50">
+                        <input type="number" placeholder="Colesterol 2" name="last_name" class="input50">
+                        <input type="number" placeholder="HDL 1" name="hdl1" class="input50">
+                        <input type="number" placeholder="HDL 2" name="hdl2" class ="input33">
+                        <input type="number" placeholder="LDL 1" name="ldl1" class ="input33">
+                        <input type="number" placeholder="LDL 2" name="ldl2" class ="input40">
+                        <input type="number" placeholder="Trigliseridos 1" name="trig1" class ="input33">
+                        <input type="number" placeholder="Trigliseridos 2" name="trig2" class ="input33">
+
+                    </div>
+                    <div class="contenedor_btn">
+                        
+                        <input type="reset" name="borrar" value="Borrar">
+                        <input type="submit" name="guardar" value="Guardar">
+                    
+                    </div>
+                
+                </form>
+            </div>
+            <footer>
+            <a class="link "href="#">www.pllab.com.co</a> Teléfono: 8095412 correo: info@pllab.com.co
+            </footer>
+        </main>
+    </body>
+    
+</html>
