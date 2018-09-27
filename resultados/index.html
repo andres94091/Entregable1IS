@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../imgs/logo.png">
+        <title>LIS</title>
+    </head>
+    <body class="img_fondo" background="../imgs/lab.jpg"
+          >
+        <main>
+            <!-- navbar-->
+            <div class="topnav">
+                <a href="../ingresar-resutlado/ingresar_resultado.html">Ingresar resultado</a>
+                <a href="../consulta-masiva/consulta_masiva.php">Consultar</a>
+                <a href="#contact">Calidad</a>
+                <a class="active" href="index.html">Resultados</a>
+                <a href="../index.html">Menu inicial</a>
+            </div>
+            <!-- Formulario-->
+            <div class="content-all">
+                <br><br>
+                <form action="consulta.php" method="post" class="form-hce">
+                    <h2>Resultados</h2>
+                    <br>
+                    <div class="contenedor_datos">
+                        <h3>Consulta de resultados</h3>
+                        <input type="text" placeholder="Cedula" name="id" class="input50">
+                    </div>
+                    <div class="contenedor_btn">
+                        
+                        <input type="reset" name="borrar" value="Borrar">
+                        <input type="submit" name="consulta" value="Buscar">
+                    
+                    </div>
+                </form>
+            </div>
+            <footer>
+            <a class="link "href="#">www.pllab.com.co</a> Teléfono: 8095412 correo: info@pllab.com.co
+            </footer>
+        </main>
+    </body>
+    
+</html>
