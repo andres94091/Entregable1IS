@@ -22,6 +22,14 @@
         <br>
         <?php
         include ("../Base_datos/conexion_db.php");
+        $Acol1=[];
+        $Acol2=[];
+        $Ahdl1=[];
+        $Ahdl2=[];
+        $Aldl1=[];
+        $Aldl2=[];
+        $Atrig1=[];
+        $Atrig2=[];
         $i=0;
         echo '<table border="1" cellspacing="2" cellpadding="10" 
         <tr align="center" bgcolor="#B9CCDD"> 
@@ -60,6 +68,7 @@
         while ($resultado = $sql->fetch_array(MYSQLI_NUM)){
             $fecha=$resultado[0];
             $col1=$resultado[1];
+            $Acol1[]=$resultado[1];
             $col2=$resultado[2];
             $hdl1=$resultado[3];
             $hdl2=$resultado[4];
@@ -131,7 +140,9 @@
         ?>
         
         <?php } //fin while
-        echo "</table>"; ?>
+        echo "</table>"; 
+        echo "$Acol1[0]";?>
+
         
     <footer>
         <a class="link "href="#">www.pllab.com.co</a> Teléfono: 8095412 correo: info@pllab.com.co
