@@ -7,6 +7,7 @@
         <link rel="icon" href="../imgs/logo.png">
         <?php 
             include ("../Base_datos/conexion_db.php");
+            date_default_timezone_set('America/Bogota');
             $date = date('Y-m-d H:i:s');
             $col1=$_POST['col1'];
             $col2=$_POST['col2'];
@@ -28,15 +29,16 @@
         <main>
             <!-- navbar-->
             <div class="topnav">
-                <a class="active" href="ingresar_resultado.html">Ingresar resultado</a>
+                <a href="../ingresar-resultado/ingresar_resultado.html">Ingresar resultado</a>
                 <a href="../consulta-masiva/consulta_masiva.php">Consultar</a>
-                <a href="ingreso_calidad.php">Calidad</a>
-                <a href="#about">Resultados</a>
+                <a class="active" href="c_calidad.html">Calidad</a>
+                <a href="../resultados/resultados.html">Resultados</a>
                 <a href="index.html">Menu inicial</a>
             </div>
             <!-- Formulario-->
             <div class="form-hce">
                 <h3>Datos personales</h3>
+                <p class="p-registro"><b>Fecha: </b><?php echo $date?></p>
                 <p class="p-registro"><b>Colesterol 1:</b> <?php echo $col1?></p>
                 <p class="p-registro"><b>Colesterol 2:</b>  <?php echo $col2?></p>
                 <p class="p-registro"><b>HDL 1:</b>  <?php echo $hdl1?></p>
@@ -45,7 +47,6 @@
                 <p class="p-registro"><b>LDL 2:</b>  <?php echo $ldl2?></p>
                 <p class="p-registro"><b>Trigliseridos 1:</b>  <?php echo $trig1?></p>
                 <p class="p-registro"><b>Trigliceridos 2:</b>  <?php echo $trig2?></p>                
-            
             </div>
             <div class="btn">
              <a class="con-ttl" href="consulta-total.php">Historial de Calidad</a>
