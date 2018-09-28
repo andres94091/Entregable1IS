@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-09-2018 a las 14:57:19
+-- Tiempo de generación: 27-09-2018 a las 19:13:48
 -- Versión del servidor: 10.1.32-MariaDB
 -- Versión de PHP: 7.2.5
 
@@ -53,7 +53,9 @@ INSERT INTO `data_exams` (`consec`, `fecha`, `name`, `lst_name`, `age`, `gender`
 (6, '2018-09-12 21:05:37', 'Prueba', 'Pruebita', 24, 1, '1', 10.5, 12.3, 45.1, 33.02, '1036951056'),
 (7, '2018-09-13 21:07:22', 'Ana Emilia', 'Castrillon Martines', 74, 2, '3', 15, 15, 15, 15, '32075950'),
 (8, '2018-09-13 21:10:20', 'pepito', 'perez', 15, 1, '1', 10, 12, 14, 16, '123456'),
-(9, '2018-09-13 21:12:39', 'pepita', 'pepona', 75, 2, '2', 10, 11, 12, 13, '456789');
+(9, '2018-09-13 21:12:39', 'pepita', 'pepona', 75, 2, '2', 10, 11, 12, 13, '456789'),
+(10, '2018-09-24 14:25:02', '', '', 0, 0, '0', 0, 0, 0, 0, ''),
+(11, '2018-09-27 14:26:42', '', '', 0, 0, '0', 0, 0, 0, 0, '');
 
 -- --------------------------------------------------------
 
@@ -72,6 +74,16 @@ CREATE TABLE `qlty_ctrol` (
   `trig1` float DEFAULT NULL,
   `trig2` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `qlty_ctrol`
+--
+
+INSERT INTO `qlty_ctrol` (`fecha`, `col1`, `col2`, `hdl1`, `hdl2`, `ldl1`, `ld21`, `trig1`, `trig2`) VALUES
+('2018-09-25 00:00:00', 1, 1.5, 2.5, 0.7, 0.8, 2.4, 4.2, 1.3),
+('2018-09-25 09:32:12', 5, 1, 1.2, 0.3, 2.7, 1.1, 1.8, 0.9),
+('2018-09-25 14:17:16', 8.2, 3.5, 1.9, 1.3, 4.6, 2.7, 2.6, 1.8),
+('2018-09-26 08:01:00', 6.5, 2.8, 1.6, 0.77, 3.95, 1.87, 2.28, 0.972);
 
 -- --------------------------------------------------------
 
@@ -135,7 +147,7 @@ ALTER TABLE `set_point`
 -- AUTO_INCREMENT de la tabla `data_exams`
 --
 ALTER TABLE `data_exams`
-  MODIFY `consec` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `consec` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
