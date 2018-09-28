@@ -13,11 +13,11 @@
     <body class="img_fondo" background="../imgs/lab.jpg">
         <main>
             <div class="topnav">
-                <a href="../ingresar-resutlado/ingresar_resultado.html">Ingresar resultado</a>
-                <a href="../consulta-masiva/consulta_masiva.php">Consultar</a>
-                <a href="#contact">Calidad</a>
-                <a class="active" href="index.html">Resultados</a>
                 <a href="../index.html">Menu inicial</a>
+                <a href="../ingresar-resultado/ingresar_resultado.html">Ingresar resultado</a>
+                <a href="../consulta-masiva/consulta_masiva.php">Consultar</a>
+                <a href="../control-calidad/c_calidad.html">Calidad</a>
+                <a class="active" href="resultados.html">Resultados</a>
             </div>
             <div class="form-hce">
                 <h2 class="form__titulo">Resultados individuales</h2>

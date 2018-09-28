@@ -9,11 +9,11 @@
     <body class="img_fondo" background="../imgs/lab.jpg">    
         <main>
            <div class="topnav">
-                <a class="active" href="../ingresar-resultado/ingresar_resultado.html">Ingresar resultado</a>
-                <a href="consulta_masiva.php">Consultar</a>
-                <a href="#contact">Calidad</a>
-                <a href="#about">Resultados</a>
-                <a href="index.html">Menu inicial</a>
+                <a href="../index.html">Menu inicial</a>
+                <a href="../ingresar-resultado/ingresar_resultado.html">Ingresar resultado</a>
+                <a class="active" href="consulta_masiva.php">Consultar</a>
+                <a href="../control-calidad/c_calidad.html">Calidad</a>
+                <a href="../resultados/resultados.html">Resultados</a>
             </div>
        <br><br>
     <div class="form-hce">

@@ -29,11 +29,11 @@
         <main>
             <!-- navbar-->
             <div class="topnav">
+                <a href="../index.html">Menu inicial</a>
                 <a href="../ingresar-resultado/ingresar_resultado.html">Ingresar resultado</a>
                 <a href="../consulta-masiva/consulta_masiva.php">Consultar</a>
                 <a class="active" href="c_calidad.html">Calidad</a>
                 <a href="../resultados/resultados.html">Resultados</a>
-                <a href="index.html">Menu inicial</a>
             </div>
             <!-- Formulario-->
             <div class="form-hce">
